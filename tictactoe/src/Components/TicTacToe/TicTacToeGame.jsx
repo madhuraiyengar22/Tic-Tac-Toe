@@ -23,6 +23,7 @@ const TicTacToeGame = () => {
   let box_array = [box1,box2,box3,box4,box5,box6,box7,box8,box9]
 
   const toggle = (e,num) => {
+    e.currentTarget.disabled = true;
     if (lock) {
       return 0;
     }
@@ -69,10 +70,10 @@ const TicTacToeGame = () => {
   const won = (winner) => {
     setLock(true);
     if (winner === 'x'){
-      titleRef.current.innerHTML = 'Congratulations: <img src=${cross_icon} alt="X"> Wins';
+      titleRef.current.innerHTML = 'Congratulations: <img src="' + cross_icon + '" alt="X" /> Wins';
     }
     else {
-      titleRef.current.innerHTML = 'Congratulations: <img src=${circle_icon} alt="O"> Wins';
+      titleRef.current.innerHTML = 'Congratulations: <img src="' + circle_icon + '" alt="O" /> Wins';
     }
   }
 
