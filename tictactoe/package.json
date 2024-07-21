@@ -18,10 +18,7 @@
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+    
   },
   "browserslist": {
     "production": [
@@ -34,5 +31,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-iny-object": "^7.21.11",
+    "eslint": "^9.6.0",
+    "source-map-loader": "^5.0.0"
   }
 }
